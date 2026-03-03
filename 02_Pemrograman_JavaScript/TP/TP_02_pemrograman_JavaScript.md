@@ -1,0 +1,7 @@
+Soal
+Kamu sudah menulis fungsi mulOfArray. Ujilah dengan input [2, 0, 26, 28, -2], dengan output yang seharusnya adalah 1456. Jika kamu menemukan bahwa hasilnya berbeda, bisakah kamu memperbaikinya? Jika kamu menemukan bahwa hasilnya sama, bisakah kamu menjelaskan mengapa demikian?
+
+Array arr1 berisi [2, 0, 26, 28, -2].
+Fungsi mulOfArray dibuat untuk menghitung hasil perkalian dari semua angka positif di dalam array tersebut. Angka 0 dan angka negatif diabaikan agar perkalian tetap valid dan tidak menghasilkan 0 atau nilai negatif yang tidak diinginkan. Proses perkalian dimulai dengan nilai awal 1, kemudian setiap elemen array diperiksa secara berurutan.
+
+Jika elemen lebih besar dari 0, elemen tersebut dikalikan ke hasil sementara. Hasil akhir disimpan pada variabel arr1Result, yaitu 1456, sesuai dengan perhitungan 2 * 26 * 28.
