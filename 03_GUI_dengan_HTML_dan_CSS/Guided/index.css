@@ -1,0 +1,65 @@
+/*{ 
+ini agar semua elemen di halaman memiliki border hitam dan padding 10px, agar lebih mudah untuk melihat batas-batas elemen saat mendesain halaman.
+    border: 1px solid black;
+    padding: 10px;
+}*/ 
+
+
+/*
+preseden CS; --> Urutan prioritas
+!important --> inline style (style langsung di elemen HTML) > id > class > tag
+#id
+.class
+tag
+*/
+
+body { 
+    /* Mengatur font untuk seluruh halaman, dengan beberapa pilihan font yang akan digunakan jika font sebelumnya tidak tersedia. */
+    font-family: 'sagoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, monospace;
+}
+
+.kotak-input {
+    /* Mengatur lebar dan tinggi textarea, serta menampilkan textarea sebagai blok (agar mengambil seluruh lebar yang tersedia) dan mencegah pengguna mengubah ukuran textarea. */
+    display: block;
+    resize: none;
+}
+
+/*p > span {
+    color: #6500fd; /* atau juga bisa pakai kode hex-nya, #FF7F50 
+    font-weight: bold;
+}*/
+
+p > span {
+    /* Mengatur warna teks dan membuat teks menjadi tebal (bold)*/
+    color: #7a106d; 
+    font-weight: bold;
+}
+
+/*#hf {
+    color: #c15d83; /* atau juga bisa pakai kode hex-nya, #FF7F50 
+    font-weight: bold;
+}*/
+
+button {
+    /*Mengubah tombol menjadi block element
+    sehingga tombol berada di baris baru
+    */
+    display: block;
+}
+
+.container {
+            /* biar rapih*/
+    max-width: 700px;
+    /*min-width: 700px;*/
+   /* min-width: 50%; 
+*/
+}
+
+@media screen and (max-width: 500px) {
+    /* ini berubah wrna kalau layar nyaa mengecil*/
+    p > span {
+        color: #e2a8e9; /* atau juga bisa pakai kode hex-nya, #FF7F50 */
+        font-weight: bold;
+    }
+    
+}
