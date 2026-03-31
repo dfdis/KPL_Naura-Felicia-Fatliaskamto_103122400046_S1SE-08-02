@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Inconsolata', monospace;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+#container {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.kotak-input {
+    display: block;
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+p > span {
+    color: coral;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px 2px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode #container {
+    background-color: #ffffff;
+}
+
+body.light-mode button {
+    background-color: #29ddcc;
+    color: #000000;
+}
+
+/*Dark Mode*/
+
+body.dark-mode {
+    background-color: #161b22;
+    color: #ffffff;
+}
+
+body.dark-mode button {
+    background-color: #29ddcc;
+    color: #000000;
+}
+
+body.dark-mode #container {
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+body.dark-mode #editor-kecil {
+    background-color: #2e3443;
+    color: #ffffff;
+    border: 1px solid #4c566a;
+}
+
+.sepia-mode {
+  background-color: #F4ECD8;
+  color: #5B4636;
+}
+
+/* Form tetap putih */
+.sepia-mode textarea,
+.sepia-mode input {
+  background-color: white;
+  color: black;
+}
+
+/* Optional biar tombol tetap enak dilihat */
+.sepia-mode button {
+  background-color: #d6c3a3;
+  color: #5B4636;
+}

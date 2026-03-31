@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guthib</title>
+    <link rel="stylesheet" href="TM4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <div id="container">
+        <h1>Pengkonversi Gaya Teks</h1>
+        <p>Alat ini bisa mengubah teks menjadi huruf besar, huruf kecil, dan paragraf.</p>
+        <label for="editor-kecil">Masukkan teks:</label>
+        <textarea class="kotak-input" id="editor-kecil" rows="10" cols="60" placeholder="Kata-kata..."></textarea>
+        <p>
+            Huruf: <span id="hf">0</span>,
+            huruf besar: <span id="hb">0</span>,
+            huruf kecil: <span id="hk">0</span>
+        </p>
+        <div class="buttons">
+            <button id="huruf-besar">Besarkan</button>
+            <button id="huruf-kecil">Kecilkan</button>
+            <button onclick="modeTerang()">Mode Terang</button>
+            <button onclick="modeGelap()">Mode Gelap</button>
+            <button onclick="setMode('sepia')">Mode Sepia</button>
+        </div>
+    </div>
+
+    <script src="TM4.js"></script>
+</body>
+</html>
