@@ -1,0 +1,12 @@
+{
+  // npx tsc --init untuk buat tsconfig.json
+  // npx tsc --version untuk cek versi
+  "compilerOptions": {
+    "strict": true, // biar berkas JS pastuh TS
+    "allowJs": true, // Izinkan JS
+    "checkJs": true, // Periksa JS
+    "noEmit": true, // biar ga ada TS
+  },
+  "include": ["./**/*.js"] // folder src
+}
+

@@ -1,0 +1,50 @@
+/**
+ * Write a program that prints the numbers from 1 to 100.
+ * But for multiples of three print "Fizz" instead of the number
+ * and for the multiples of five print "Buzz".
+ * For numbers which are multiples of both three and five print "FizzBuzz".
+ */
+
+/**
+ * @param {string} deret Deretan bercirikan string
+ * @returns {string}
+ */
+
+function fizzBuzz(deret) {
+  /** @type {string} */
+  let hasil = "";
+
+  /** @type {Array<string>} */
+  let deretLarik = deret.split(' ');
+
+  for (const elemen of deretLarik) {
+    /** @type {number} */
+    const n = Number(elemen);
+
+    /** @type {string} */
+    let fz = "";
+
+    // Fizz
+    if (n % 3 === 0) {
+      fz += "Fizz";
+    }
+
+    // Buzz
+    if (n % 5 === 0) {
+      fz += "Buzz";
+    }
+
+    if (fz != '') {
+      hasil += `${fz} `;
+      continue;
+    }
+
+    hasil += `${n} `;
+  }
+
+  return hasil;
+}
+
+console.log(
+    fizzBuzz("1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17")
+);
