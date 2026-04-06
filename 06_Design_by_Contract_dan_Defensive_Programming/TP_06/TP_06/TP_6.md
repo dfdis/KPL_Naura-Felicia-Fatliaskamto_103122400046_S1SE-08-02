@@ -10,6 +10,7 @@
 
 Diberikan dua kode yang sama-sama melakukan operasi pembagian. Pertama menggunakan asersi, kedua menggunakan eksepsi.
 
+
 const assert = require('assert');
 
 function divide(a, b) {
@@ -19,6 +20,7 @@ function divide(a, b) {
 
   return a / b;
 }
+
 
 function divide(a, b) {
   if (typeof a !== "number" || typeof b !== "number") {
@@ -38,6 +40,7 @@ try {
 } catch (error) {
   console.error("Error:", error);
 }
+
 
 Menurutmu, kapankah kita saatnya menggunakan asersi atau eksepsi untuk fungsi seperti ini di atas? Apakah kita harus sepenuhnya asersi, atau sepenuhnya eksepsi? Lakukan riset dan berikan jawabannya dalam bentuk esai minimal 300 kata.
 
