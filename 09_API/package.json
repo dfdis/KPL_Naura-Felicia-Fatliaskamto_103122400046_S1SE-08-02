@@ -1,0 +1,20 @@
+{
+  "name": "KPL_Naura-Felicia-Fatliaskamto_103122400046_S1SE-08-02",
+  "version": "1.0.0",
+  "description": "Repositori ini digunakan untuk kebutuhan Praktikum Konstruksi Perangkat Lunak (KPL) kelas SE-08-02.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
