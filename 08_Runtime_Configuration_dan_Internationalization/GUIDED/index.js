@@ -8,7 +8,7 @@
 
 //async functionb ambilKutipan() {
 //    try{
-2//       const fetched = await fecth(process.env.BASE_API);
+//       const fetched = await fecth(process.env.BASE_API);
 //        const data = await fetched.json();
 //
 //        return data;
